@@ -1,0 +1,163 @@
+
+body {
+    /* background-color:rgb(59 62 89); */
+    background-color:hsl(222, 26%, 31%);
+    font-family: 'League Spartan', sans-serif;
+    scroll-behavior: smooth;
+    /* font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif; */
+}
+.container {
+    width:300px;
+    margin:150px auto;
+}
+/* Start header */
+.container header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container header h3{
+    font-weight:bold;
+    color:white;
+    margin:0 0 0 10px;
+    
+}
+header .themes {
+    display: flex;
+    color: white;
+    text-transform: uppercase;
+    width: 45%;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+    position: relative;
+    font-size: 10px;
+    gap: 20px;
+}
+header .themes .shape{
+    display:flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items:center;
+}
+header .themes  ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -80%;
+    width: 45%;
+    right: 4%;
+    font-size: 12px;
+
+}
+header .themes .shape ul li{
+    font-size:10px;
+    font-weight:bold;
+}
+.themes .toggle_themes{
+    width:60px;
+    height:20px;
+    background-color:hsl(223, 31%, 20%);
+    border-radius:20px ;
+    position:relative;
+}
+.themes .toggle_themes .ball{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: hsl(6, 63%, 50%);
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 9px;
+
+}
+.themes .toggle_themes .ball:hover{
+    cursor:pointer;
+}
+/* End header */
+/* Start main */
+main .screen{
+    padding:20px;
+    font-weight:bold;
+    font-size:40px;
+    text-align:right;
+    background-color:hsl(224, 36%, 15%);
+    border-radius:5px;
+    color:white;
+    margin: 10px 10px 20px 10px;
+    overflow: hidden;
+    word-wrap:no-wrap
+}
+main .buttons{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background: hsl(223, 31%, 20%);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    justify-content: space-around;
+}
+main .buttons span{
+    width: 55px;
+    height: 36px;
+    margin: 5px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    font-size: 20px;
+    box-shadow: 0px 2px 0px 0px hsl(28, 16%, 65%);
+    -webkit-box-shadow: 0px 2px 0px 0px hsl(28, 16%, 65%);
+    -moz-box-shadow: 0px 2px 0px 0px hsl(28, 16%, 65%);
+}
+main .buttons span:hover{
+    background-color:white;
+}
+main .buttons span:hover{
+    cursor:pointer;
+}
+main .buttons span:nth-of-type(17),main .buttons span:nth-of-type(18){
+    width: -webkit-fill-available;
+}
+main .buttons span:nth-of-type(17){
+    grid-column:1/3;
+}
+main .buttons span:nth-of-type(17),
+main .buttons span:nth-of-type(4){
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 2px 0px 0px hsl(224, 28%, 35%);
+    -webkit-box-shadow: 0px 2px 0px 0px hsl(224, 28%, 35%);
+    -moz-box-shadow: 0px 2px 0px 0px hsl(224, 28%, 35%);
+}
+
+main .buttons span:nth-of-type(17):hover,
+main .buttons span:nth-of-type(4):hover
+{
+    background:#a7b3f5;
+}
+main .buttons span:nth-of-type(18){
+    grid-column: 3/5;
+    background-color:hsl(6, 63%, 50%);
+    color:white;
+    box-shadow: 0px 2px 0px 0px hsl(6, 70%, 34%);
+    -webkit-box-shadow: 0px 2px 0px 0px hsl(6, 70%, 34%);
+    -moz-box-shadow: 0px 2px 0px 0px hsl(6, 70%, 34%);
+}
+main .buttons span:nth-of-type(18):hover,.themes .toggle_themes .ball:hover{
+    background-color:hsl(9deg 47% 55%)
+}
+/* End main */

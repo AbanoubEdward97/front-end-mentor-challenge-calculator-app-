@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Open+Sans:wght@300;500&family=Poppins:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style1.css">
+  <link rel="stylesheet" href="./style2.css">
+  <title>Frontend Mentor | Calculator app</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Start Header -->
+    <header>
+      <h3>calc</h3>
+      <div class="themes">
+        theme
+        <ul class="toggle_numbers">
+          <li class="number">1</li>
+          <li class="number">2</li>
+          <li class="number">3</li>
+        </ul>
+        <div class="shape">
+          <div class="toggle_themes">
+            <span class="ball"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <main>
+      <div class="screen">0</div>
+      <div class="buttons">
+        <span class="btn-number" value="7">7</span>
+        <span class="btn-number" value="8">8</span>
+        <span class="btn-number" value="9">9</span>
+        <span id="del">del</span>
+        <!-- first row -->
+        <span class="btn-number" value="4">4</span>
+        <span class="btn-number" value="5">5</span>
+        <span class="btn-number" value="6">6</span>
+        <span id="add" class="operator">+</span>
+        <!-- second row -->
+        <span class="btn-number" value="1">1</span>
+        <span class="btn-number" value="2">2</span>
+        <span class="btn-number" value="3">3</span>
+        <span id="subtract" class="operator">-</span>
+        <!-- third row -->
+        <span id="dot" class="btn-number">.</span>
+        <span class="btn-number" value="0">0</span>
+        <span id="divide" class="operator">/</span>
+        <span id="multiply" class="operator">X</span>
+        <!-- fifth row -->
+        <span id="reset">reset</span>
+        <span id="equal" class="operator">=</span>
+      </div>
+    </main>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Abanoub Edward Zaki </a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(232 230 235);
+}
+header .themes ,
+.container header h3,
+main .screen{
+    color: #474242;
+}
+.themes .toggle_themes,
+main .buttons{
+    background-color:#d3cfcf
+}
+main .screen{
+    background-color: #f2f2f8; 
+}
+.themes .toggle_themes .ball{
+    left:50%;
+}
+.themes .toggle_themes .ball,
+main .buttons span:nth-of-type(18) 
+{
+    background-color:hsl(25, 98%, 40%);
+}
+.themes .toggle_themes .ball:hover,
+main .buttons span:nth-of-type(18):hover{
+    background-color:#ff8647
+}
+main .buttons span:nth-of-type(17),
+main .buttons span:nth-of-type(4){
+    background-color:hsl(185, 42%, 37%);
+    box-shadow:0px 2px 0px 0px hsl(185, 58%, 25%);
+    -webkit-box-shadow: 0px 2px 0px 0px hsl(185, 58%, 25%);
+    -moz-box-shadow: 0px 2px 0px 0px hsl(185, 58%, 25%);
+
+ }
+ main .buttons span{
+    box-shadow:0px 2px 0px 0px rgb(153 142 142 / 75%);
+    -webkit-box-shadow: 0px 2px 0px 0px rgb(153 142 142 / 75%);
+    -moz-box-shadow: 0px 2px 0px 0px rgb(153 142 142 / 75%);
+ }
+ main .buttons span:nth-of-type(17):hover,
+ main .buttons span:nth-of-type(4):hover{
+        background-color: #73bac6;
+ }
+ main .buttons span:nth-of-type(18){
+    box-shadow: 0px 2px 0px 0px hsl(25, 99%, 27%);
+    -webkit-box-shadow: 0px 2px 0px 0px hsl(25, 99%, 27%);
+    -moz-box-shadow: 0px 2px 0px 0px hsl(25, 99%, 27%);
+ }
+
